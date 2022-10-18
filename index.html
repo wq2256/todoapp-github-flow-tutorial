@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>トップページ</title>
+    <meta name="description" content="" />
+
+    <!-- 互換表示させないmetaタグを追加 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- ogp start -->
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="" />
+    <meta property="og:image" content="" />
+    <!-- //ogp end -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/53a240861a.js" crossorigin="anonymous"></script>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- nav-header -->
+    <nav class="nav-header">
+        <div class="nav-header__container">
+            <a href="./index.html" class="nav-header__logo">
+                <img src="./img/logo_bg_none.png" alt="#">
+                <p class="nav-header__logo-title">SENDAI TANABATA FESTIVAL</p>
+            </a>
+
+            <ul class="nav-header__menu">
+                <li class="nav-header__menu-item">
+                    <a href="#top-message" class="nav-header__link">
+                        <img class="nav-header__youtube" src="./img/youtube.png" alt="#">
+                    </a>
+                </li>
+                <li class="nav-header__menu-item">
+                    <a href="#top-about" class="nav-header__link">
+                        <img class="nav-header__facebook" src="./img/facebook.png" alt="#">
+                    </a>
+                </li>
+                <li class="nav-header__menu-item">
+                    <a href="#top-access" class="nav-header__link">
+                        <i class="fa-brands fa-twitter nav-header__twitter"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+            <div class="nav-header__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+
+
+        </div>
+    </nav><!-- /nav-header -->
+
+
+    <nav class="nav-drawer__toggle">
+        <ul class="nav-drawer__list">
+            <li class="nav-drawer__box">
+                <p class="nav-drawer__trg">仙台七夕まつりとは<span class="nav-drawer__span"></span></p>
+                <div class="nav-drawer__accordion">
+                    <a class="nav-drawer__link" href="#">コンクールの特徴</a>
+                    <a class="nav-drawer__link" href="#">組織および運営体制</a>
+                    <a class="nav-drawer__link" href="#">コンクール規約</a>
+                    <a class="nav-drawer__link" href="#">会場アクセス</a>
+                    <a class="nav-drawer__link" href="#">仙台市について</a>
+                </div><!-- /.nav-drawer__accordion -->
+            </li>
+
+            <li class="nav-drawer__box">
+                <p class="nav-drawer__trg">お知らせ<span class="nav-drawer__span"></span></p>
+                <div class="nav-drawer__accordion">
+                    <a class="nav-drawer__link" href="#">ニュース&トピックス</a>
+                    <a class="nav-drawer__link" href="#">コンクール関連</a>
+                </div><!-- /.nav-drawer__accordion -->
+            </li>
+
+            <li class="nav-drawer__box">
+                <p class="nav-drawer__trg">関連イベント<span class="nav-drawer__span"></span></p>
+                <div class="nav-drawer__accordion">
+                    <a class="nav-drawer__link" href="#">これからのイベント</a>
+                    <a class="nav-drawer__link" href="#">2022年</a>
+                    <a class="nav-drawer__link" href="#">2021年</a>
+                    <a class="nav-drawer__link" href="#">2020年</a>
+                    <a class="nav-drawer__link" href="#">2019年</a>
+                    <a class="nav-drawer__link" href="#">2018年</a>
+                    <a class="nav-drawer__link" href="#">2017年</a>
+                    <a class="nav-drawer__link" href="#">2016年</a>
+                    <a class="nav-drawer__link" href="#">2015年</a>
+                    <a class="nav-drawer__link" href="#">2014年</a>
+                </div><!-- /.nav-drawer__accordion -->
+            </li>
+
+            <li class="nav-drawer__box">
+                <p class="nav-drawer__trg">過去のコンクール<span class="nav-drawer__span"></span></p>
+                <div class="nav-drawer__accordion">
+                    <a class="nav-drawer__link" href="#">第8回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第7回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第6回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第5回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第4回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第3回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第2回コンクール</a>
+                    <a class="nav-drawer__link" href="#">第1回コンクール</a>
+                </div><!-- /.nav-drawer__accordion -->
+            </li>
+
+            <li class="nav-drawer__box">
+                <p class="nav-drawer__trg">ボランティア<span class="nav-drawer__span"></span></p>
+                <div class="nav-drawer__accordion">
+                    <a class="nav-drawer__link" href="#">活動内容について</a>
+                    <a class="nav-drawer__link" href="#">募集要項</a>
+                    <a class="nav-drawer__link" href="#">広報誌「コンチェルト」</a>
+                    <a class="nav-drawer__link" href="#">ボランティアブログ </a>
+                </div><!-- /.nav-drawer__accordion -->
+
+            </li>
+
+            <li class="nav-drawer__box">
+                <p class="nav-drawer__trg">その他<span class="nav-drawer__span"></span></p>
+                <div class="nav-drawer__accordion">
+                    <a class="nav-drawer__link" href="#">SIMCニュースレター</a>
+                    <a class="nav-drawer__link" href="#">コラム & レビュー</a>
+                    <a class="nav-drawer__link" href="#">インタビュー</a>
+                    <a class="nav-drawer__link" href="#">公式CDのご紹介</a>
+                </div><!-- /.nav-drawer__accordion -->
+            </li>
+        </ul><!-- /nav-drawer__list -->
+
+
+        <ul class="nav-header__menu--sp">
+            <li class="nav-header__menu-item youtubespace">
+                <a href="#top-message" class="nav-header__link">
+                    <img class="nav-header__youtube" src="./img/youtube (1).png" alt="#">
+                </a>
+            </li>
+            <li class="nav-header__menu-item">
+                <a href="#top-about" class="nav-header__link">
+                    <img class="nav-header__facebook" src="./img/facebook (1).png" alt="#">
+                </a>
+            </li>
+            <li class="nav-header__menu-item">
+                <a href="#top-access" class="nav-header__link">
+                    <i class="fa-brands fa-twitter nav-header__twitter"></i>
+                </a>
+            </li>
+        </ul>
+
+
+
+
+        <form method="get" action=http://www.google.co.jp/search target="_blank" class="search">
+            <input type="text" name="query" size="30" maxlength="255" value="" class="search__box">
+            <button type="submit" class="search__btn">
+                <img src="img/wi.png" alt="#">
+            </button>
+            <input type="hidden" name="hl" value="ja">
+            <input type="hidden" name="sitesearch" value="https://XXXXXXX/">
+        </form>
+
+
+        <ul class="nav-drawer__list2">
+            <li class="nav-drawer__box2">
+                <a class="nav-drawer__link2" href="#">リンク集</a>
+                <a class="nav-drawer__link2" href="#">プライバシーポリシー</a>
+                <a class="nav-drawer__link2" href="#">お問い合わせ</a>
+            </li>
+        </ul>
+
+
+
+
+    </nav>
+
+
+
+    <main id="wrapper" class="wrapper">
+
+        <!-- mainvisual -->
+        <section id="mainvisual" class="mainvisual">
+            <div class="mainvisual__container">
+
+                <a class="mainvisual__link" href="#">Explore the 8th SIMC</a>
+
+
+                <div class="swiper mySwiper slider1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="slide-img">
+                                <img src="img/24716802_m.jpg" alt="スライダー画像1">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img">
+                                <img src="img/24319339_m.jpg" alt="スライダー画像2">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slide-img">
+                                <img src="img/24347066_m.jpg" alt="スライダー画像3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+            </div>
+        </section><!-- /mainvisual -->
+
+
+        <!-- news -->
+        <section id="news" class="news">
+            <div class="section-title">
+                <!-- section-title__heading -->
+                <h2 class="section-title__heading">
+                    <div class="section-title__content">
+                        <div class="section-title__text-main--news">News & Topics</div>
+                    </div>
+                </h2><!-- /section-title__heading -->
+            </div>
+
+            <div class="news__container">
+                <ul class="news__list">
+                    <li class="news__box">
+                        <p class="news__date">2022/07/07</p><!-- /.news__date -->
+                        <div class="news__title">
+                            <a href="#">七夕まつりに関するお知らせを掲載しました。</a>
+                        </div><!-- /.news__title -->
+                    </li><!-- /.news__box -->
+
+                    <li class="news__box">
+                        <p class="news__date">2022/07/07</p><!-- /.news__date -->
+                        <div class="news__title">
+                            <a href="#">七夕まつりに関するお知らせを掲載しました。</a>
+                        </div><!-- /.news__title -->
+                    </li><!-- /.news__box -->
+
+                    <li class="news__box">
+                        <p class="news__date">2022/07/07</p><!-- /.news__date -->
+                        <div class="news__title">
+                            <a href="#">七夕まつりに関するお知らせを掲載しました。</a>
+                        </div><!-- /.news__title -->
+                    </li><!-- /.news__box -->
+
+                    <li class="news__box">
+                        <p class="news__date">2022/07/07</p><!-- /.news__date -->
+                        <div class="news__title">
+                            <a href="#">七夕まつりに関するお知らせを掲載しました。</a>
+                        </div><!-- /.news__title -->
+                    </li><!-- /.news__box -->
+
+
+                </ul>
+
+                <div class="btnbox">
+                    <button class="button">SHOW MORE</button>
+                </div>
+
+
+
+            </div><!-- /.news__container -->
+
+
+
+        </section>
+
+
+
+
+
+        <!-- top-message -->
+        <section id="top-message" class="top-message">
+            <div class="top-message__container">
+
+                <div class="section-title">
+                    <!-- section-title__heading -->
+                    <h2 class="section-title__heading">
+                        <div class="section-title__content">
+                            <div class="section-title__text-main">Official Movie</div>
+                        </div>
+                    </h2><!-- /section-title__heading -->
+                </div>
+
+
+
+                <div class="top-message__content">
+
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/SmAFgcP_3xs"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+
+                </div>
+
+            </div><!-- /top-message__container-->
+
+        </section><!-- /top-message -->
+
+
+
+        <!-- top-about -->
+        <section id="top-about" class="top-about">
+
+            <div class="top-about__container">
+
+                <div class="section-title">
+                    <!-- section-title__heading -->
+                    <h2 class="section-title__heading">
+                        <div class="section-title__content">
+                            <div class="section-title__text-main">Event Information</div>
+                        </div>
+                    </h2><!-- /section-title__heading -->
+                </div>
+
+
+
+                <div class="top-about__center">
+
+                    <ul class="top-about__box">
+                        <li class="top-about__list">
+                            <img src="img/poster_h20.jpg" alt="#">
+
+                            <div class="top-about__list--event">
+                                <p class="top-about__list--text1">仙台国際音楽コンクール運営副委員長</p>
+                                <a href="#">澁谷 由美子　ヴァイオリン リサイタル</a>
+                                <p class="top-about__list--text2">2022年10月16日（日）14:00開演（13:30開場）<br>
+                                    宮城野区文化センター　PaToNaホール</p>
+                                <div class="btnbox--about">
+                                    <button class="button">LEARN MORE</button>
+                                </div>
+                            </div><!-- /.top-about__list--event -->
+                        </li><!-- /.top-about__list -->
+
+                        <li class="top-about__list">
+                            <img src="img/poster_h21.jpg" alt="#">
+
+                            <div class="top-about__list--event">
+                                <p class="top-about__list--text1">仙台国際音楽コンクール運営副委員長</p>
+                                <a href="#">澁谷 由美子　ヴァイオリン リサイタル</a>
+                                <p class="top-about__list--text2">2022年10月16日（日）14:00開演（13:30開場）<br>
+                                    宮城野区文化センター　PaToNaホール</p>
+                                <div class="btnbox--about">
+                                    <button class="button">LEARN MORE</button>
+                                </div>
+                            </div><!-- /.top-about__list--event -->
+                        </li><!-- /.top-about__list -->
+
+                        <li class="top-about__list">
+                            <img src="img/poster_h23.jpg" alt="#">
+
+                            <div class="top-about__list--event">
+                                <p class="top-about__list--text1">仙台国際音楽コンクール運営副委員長</p>
+                                <a href="#">澁谷 由美子　ヴァイオリン リサイタル</a>
+                                <p class="top-about__list--text2">2022年10月16日（日）14:00開演（13:30開場）<br>
+                                    宮城野区文化センター　PaToNaホール</p>
+                                <div class="btnbox--about">
+                                    <button class="button">LEARN MORE</button>
+                                </div>
+                            </div><!-- /.top-about__list--event -->
+                        </li><!-- /.top-about__list -->
+
+                        <li class="top-about__list">
+                            <img src="img/poster_h31.jpg" alt="#">
+
+                            <div class="top-about__list--event">
+                                <p class="top-about__list--text1">仙台国際音楽コンクール運営副委員長</p>
+                                <a href="#">澁谷 由美子　ヴァイオリン リサイタル</a>
+                                <p class="top-about__list--text2">2022年10月16日（日）14:00開演（13:30開場）<br>
+                                    宮城野区文化センター　PaToNaホール</p>
+                                <div class="btnbox--about">
+                                    <button class="button">LEARN MORE</button>
+                                </div>
+
+                            </div><!-- /.top-about__list--event -->
+                        </li><!-- /.top-about__list -->
+                    </ul><!-- /.top-about__box -->
+
+                    <div class="btnbox--other">
+                        <button class="button">SHOW MORE</button>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </section><!-- /top-about -->
+
+
+
+        <!-- top-access -->
+        <section id="top-access" class="top-access">
+            <div class="top-access__container">
+
+
+                <div class="section-title">
+                    <!-- section-title__heading -->
+                    <h2 class="section-title__heading">
+                        <div class="section-title__content">
+                            <div class="section-title__text-main">Tohoku Festival</div>
+                        </div>
+                    </h2><!-- /section-title__heading -->
+                </div>
+
+
+
+                <ul class="top-access__list">
+                    <li class="top-access__box">
+                        <div class="top-access__box2">
+                            <p class="top-access__date">
+                                2020 3 23
+                            </p><!-- /.top-access__date -->
+                            <p class="top-access__title">
+                                七夕太郎さんインタビュー
+                            </p><!-- /.top-access__title -->
+                        </div><!-- /.top-access__box2 -->
+
+                        <div class="top-access__box3">
+
+                            <div class="top-access__photo">
+                                <img src="img/sl_02_01.jpg" alt="">
+                            </div><!-- /.top-access__photo -->
+
+
+                            <div class="top-access__box4">
+
+                                <div class="top-access__box2--sp">
+                                    <p class="top-access__date">
+                                        2020 3 23
+                                    </p><!-- /.top-access__date -->
+                                    <p class="top-access__title">
+                                        七夕太郎さんインタビュー
+                                    </p><!-- /.top-access__title -->
+                                </div><!-- /.top-access__box2--sp -->
+
+                                <p class="top-access__person">音楽ジャーナリスト<span>正木 裕美</span></p>
+                                <p class="top-access__text">
+                                    テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。...
+                                </p>
+
+
+                                <div class="btnbox--read">
+                                    <a href="#" class="readmore-btn">READ MORE</a>
+                                </div>
+
+
+
+                            </div><!-- /.top-access__box4 -->
+
+                        </div><!-- /.top-access__box3 -->
+                    </li><!-- /.top-access__box -->
+
+                    <li class="top-access__box">
+                        <div class="top-access__box2">
+                            <p class="top-access__date">
+                                2020 3 23
+                            </p><!-- /.top-access__date -->
+                            <p class="top-access__title">
+                                七夕花子さんインタビュー
+                            </p><!-- /.top-access__title -->
+                        </div><!-- /.top-access__box2 -->
+
+                        <div class="top-access__box3">
+
+                            <div class="top-access__photo">
+                                <img src="img/sl_02_02.jpg" alt="">
+                            </div><!-- /.top-access__photo -->
+
+                            <div class="top-access__box4">
+
+                                <div class="top-access__box2--sp">
+                                    <p class="top-access__date">
+                                        2020 3 23
+                                    </p><!-- /.top-access__date -->
+                                    <p class="top-access__title">
+                                        七夕花子さんインタビュー
+                                    </p><!-- /.top-access__title -->
+                                </div><!-- /.top-access__box2--sp -->
+
+
+                                <p class="top-access__person">音楽ジャーナリスト<span>正木 裕美</span></p>
+                                <p class="top-access__text">
+                                    テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。...
+                                </p>
+
+
+                                <div class="btnbox--read">
+                                    <a href="#" class="readmore-btn">READ MORE</a>
+                                </div>
+
+                            </div><!-- /.top-access__box4 -->
+
+                        </div><!-- /.top-access__box3 -->
+                    </li><!-- /.top-access__box -->
+
+                    <li class="top-access__box">
+                        <div class="top-access__box2">
+                            <p class="top-access__date">
+                                2020 3 23
+                            </p><!-- /.top-access__date -->
+                            <p class="top-access__title">
+                                七夕夢子さんインタビュー
+                            </p><!-- /.top-access__title -->
+                        </div><!-- /.top-access__box2 -->
+
+                        <div class="top-access__box3">
+
+
+                            <div class="top-access__photo">
+                                <img src="img/sl_02_05.jpg" alt="">
+                            </div><!-- /.top-access__photo -->
+
+                            <div class="top-access__box4">
+
+                                <div class="top-access__box2--sp">
+                                    <p class="top-access__date">
+                                        2020 3 23
+                                    </p><!-- /.top-access__date -->
+                                    <p class="top-access__title">
+                                        七夕夢子さんインタビュー
+                                    </p><!-- /.top-access__title -->
+                                </div><!-- /.top-access__box2--sp -->
+
+                                <p class="top-access__person">音楽ジャーナリスト<span>正木 裕美</span></p>
+                                <p class="top-access__text">
+                                    テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。...
+                                </p>
+
+                                <div class="btnbox--read">
+                                    <a href="#" class="readmore-btn">READ MORE</a>
+                                </div>
+
+
+                            </div><!-- /.top-access__box4 -->
+
+                        </div><!-- /.top-access__box3 -->
+                    </li><!-- /.top-access__box -->
+
+                    <li class="top-access__box">
+                        <div class="top-access__box2">
+                            <p class="top-access__date">
+                                2020 3 23
+                            </p><!-- /.top-access__date -->
+                            <p class="top-access__title">
+                                七夕春夫さんインタビュー
+                            </p><!-- /.top-access__title -->
+                        </div><!-- /.top-access__box2 -->
+
+                        <div class="top-access__box3">
+
+                            <div class="top-access__photo">
+                                <img src="img/sl_02_06.jpg" alt="">
+                            </div><!-- /.top-access__photo -->
+
+                            <div class="top-access__box4">
+
+                                <div class="top-access__box2--sp">
+                                    <p class="top-access__date">
+                                        2020 3 23
+                                    </p><!-- /.top-access__date -->
+                                    <p class="top-access__title">
+                                        七夕春夫さんインタビュー
+                                    </p><!-- /.top-access__title -->
+                                </div><!-- /.top-access__box2--sp -->
+
+                                <p class="top-access__person">音楽ジャーナリスト<span>正木 裕美</span></p>
+                                <p class="top-access__text">
+                                    テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。テキストはダミーで入れています。...
+                                </p>
+
+                                <div class="btnbox--read">
+                                    <a href="#" class="readmore-btn">READ MORE</a>
+                                </div>
+
+
+                            </div><!-- /.top-access__box4 -->
+
+                        </div><!-- /.top-access__box3 -->
+                    </li><!-- /.top-access__box -->
+
+
+                </ul><!-- /.top-access__list -->
+
+                <div class="btnbox--other">
+                    <button class="button">SHOW MORE</button>
+                </div>
+
+
+            </div>
+
+        </section><!-- /top-access -->
+
+
+
+
+        <!-- Column & Reviews -->
+        <section id="column" class="column">
+
+            <div class="column__container">
+
+                <div class="section-title">
+                    <!-- section-title__heading -->
+                    <h2 class="section-title__heading">
+                        <div class="section-title__content">
+                            <div class="section-title__text-main">Column & Reviews</div>
+                        </div>
+                    </h2><!-- /section-title__heading -->
+                </div>
+
+
+                <ul class="column__list">
+                    <li class="column__box">
+                        <p class="column__date">
+                            2020 3 18
+                        </p><!-- /.top-access__date -->
+                        <p class="column__title">
+                            チェ・ヒョンロク（第7回ピアノ部⾨優勝）<br>
+                            仙台フィルハーモニー管弦楽団第333回定期演奏会 演奏レポート
+                        </p><!-- /.top-access__title -->
+
+
+                        <p class="column__person">音楽ジャーナリスト<span>正木 裕美</span></p>
+                        <p class="column__text">2022年7⽉27、28⽇の2⽇間にわたり、東北最大規模の祭りが開催されました。今年は開催...
+                        </p>
+
+                        <div class="btnbox--read">
+                            <a href="#" class="readmore-btn">READ MORE</a>
+                        </div>
+
+
+                    </li><!-- /.column__box -->
+
+                    <li class="column__box">
+                        <p class="column__date">
+                            2020 3 18
+                        </p><!-- /.top-access__date -->
+                        <p class="column__title">
+                            シャノン・リー（第7回ヴァイオリン部⾨最⾼位［第2位］）<br>
+                            東京交響楽団 名曲全集 第152回 演奏レポート
+                        </p><!-- /.top-access__title -->
+
+
+                        <p class="column__person">音楽評論家<span>松本 學</span></p>
+                        <p class="column__text">第7回仙台国際⾳楽コンクールで最⾼位を得てから半年を経た2019年12⽉、シャノ...
+                        </p>
+
+                        <div class="btnbox--read">
+                            <a href="#" class="readmore-btn">READ MORE</a>
+                        </div>
+
+                    </li><!-- /.column__box -->
+
+                    <li class="column__box">
+                        <p class="column__date">
+                            2020 3 18
+                        </p><!-- /.top-access__date -->
+                        <p class="column__title">
+                            第7回コンクール評①
+                        </p><!-- /.top-access__title -->
+
+
+                        <p class="column__person">音楽評論家<span>梅津 時比古</span></p>
+                        <p class="column__text">仙台国際音楽コンクールが協奏曲をメーンに据えた世界的にも珍しいコンクールである...
+                        </p>
+
+                        <div class="btnbox--read">
+                            <a href="#" class="readmore-btn">READ MORE</a>
+                        </div>
+
+                    </li><!-- /.column__box -->
+
+                    <li class="column__box">
+                        <p class="column__date">
+                            2020 3 18
+                        </p><!-- /.top-access__date -->
+                        <p class="column__title">
+                            第7回コンクール評②
+                        </p><!-- /.top-access__title -->
+
+
+                        <p class="column__person">音楽評論家<span>
+                                萩谷 由喜子</span></p>
+                        <p class="column__text">現在、国際音楽コンクール世界連盟に加盟しているピアノの国際コンクールで日本を開...
+                        </p>
+
+                        <div class="btnbox--read">
+                            <a href="#" class="readmore-btn">READ MORE</a>
+                        </div>
+
+                    </li><!-- /.column__box -->
+
+                </ul><!-- /.column__list -->
+
+
+                <div class="btnbox--other">
+                    <button class="button">SHOW MORE</button>
+                </div>
+
+
+            </div><!-- /.column__container -->
+
+
+        </section>
+
+        <section id="other" class="other">
+
+            <div class="other__container">
+                <ul class="other__list">
+                    <li class="other__box">
+                        <p>About</p>
+                        <figure class="other__img">
+                            <a href="#" class="other__imglink"><img src="img/photo_1.jpg" alt=""></a>
+                        </figure><!-- /.other__img -->
+
+                        <a href="#" class="top-access__btn other__txtlink">仙台七夕まつりとは</a>
+                    </li><!-- /.other__box -->
+
+                    <li class="other__box">
+                        <p>News Letters</p>
+                        <figure class="other__img">
+                            <a href="#" class="other__imglink"><img src="img/guidebook-726x1024.jpg" alt=""></a>
+                        </figure><!-- /.other__img -->
+
+                        <a href="#" class="top-access__btn other__txtlink">七夕ニュース</a>
+                    </li><!-- /.other__box -->
+
+
+                    <li class="other__box">
+                        <p>Volunteer Blog</p>
+                        <figure class="other__img">
+                            <a href="#" class="other__imglink"><img src="img/tohoku.png" alt=""></a>
+                        </figure><!-- /.other__img -->
+
+                        <a href="#" class="top-access__btn other__txtlink">七夕ブログ</a>
+                    </li><!-- /.other__box -->
+
+
+                    <li class="other__box">
+                        <p>Official CD</p>
+                        <figure class="other__img">
+                            <a href="#" class="other__imglink"><img src="img/00015876_1.jpg" alt=""></a>
+                        </figure><!-- /.other__img -->
+
+                        <a href="#" class="top-access__btn other__txtlink">協賛のご紹介</a>
+                    </li><!-- /.other__box -->
+
+
+
+                </ul><!-- /.other__list -->
+
+            </div><!-- /.other__container -->
+        </section><!-- /.other -->
+
+    </main>
+
+
+    <!-- footer -->
+    <footer id="footer" class="footer">
+
+        <div class="footer__wrapper">
+            <div class="footer__container">
+                <div class="footer__up">
+                    <div class="footer__left">
+                        <div class="footer__category">
+                            <p>仙台七夕まつりとは</p>
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">コンクールの特徴</a>
+                                    <a href="#">組織および運営体制</a>
+                                    <a href="#">コンクール規約</a>
+                                    <a href="#">会場アクセス</a>
+                                    <a href="#"> 仙台市について</a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+                        <div class="footer__category">
+                            <p>お知らせ</p>
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">ニュース&トピックス</a>
+                                    <a href="#">コンクール関連</a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+                        <div class="footer__category">
+                            <ul class="nav-header__menu">
+                                <li class="nav-header__menu-item">
+                                    <a href="#top-message" class="nav-header__link">
+                                        <img class="nav-header__youtube" src="./img/youtube.png" alt="#">
+                                    </a>
+                                </li>
+                                <li class="nav-header__menu-item">
+                                    <a href="#top-about" class="nav-header__link">
+                                        <img class="nav-header__facebook" src="./img/facebook.png" alt="#">
+                                    </a>
+                                </li>
+                                <li class="nav-header__menu-item">
+                                    <a href="#top-access" class="nav-header__link">
+                                        <i class="fa-brands fa-twitter nav-header__twitter"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div><!-- /.footer__category -->
+
+
+                        <form method="get" action=http://www.google.co.jp/search target="_blank" class="search2">
+                            <input type="text" name="query" size="30" maxlength="255" value="" class="searchbox2">
+                            <button type="submit" class="searchbtn2">
+                                <img src="img/bl.png" alt="#">
+                            </button>
+                            <input type="hidden" name="hl" value="ja">
+                            <input type="hidden" name="sitesearch" value="https://XXXXXXX/">
+                        </form>
+
+
+
+
+                        <div class="footer__category">
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">リンク集</a>
+                                    <a href="#">プライバシーポリシー</a>
+                                    <a href="./contact.html">お問い合わせ</a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+                    </div><!-- /.footer__left -->
+
+                    <div class="footer__right">
+
+                        <div class="footer__category">
+                            <p>関連イベント</p>
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">これからのイベント</a>
+                                    <a href="#">2022年</a>
+                                    <a href="#">2021年</a>
+                                    <a href="#">2020年</a>
+                                    <a href="#">2019年</a>
+                                    <a href="#">2018年</a>
+                                    <a href="#">2017年</a>
+                                    <a href="#">2016年</a>
+                                    <a href="#">2015年</a>
+                                    <a href="#">2014年</a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+
+                        <div class="footer__category">
+                            <p>過去のコンクール</p>
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">第8回コンクール</a>
+                                    <a href="#">第7回コンクール</a>
+                                    <a href="#">第6回コンクール</a>
+                                    <a href="#">第5回コンクール</a>
+                                    <a href="#">第4回コンクール</a>
+                                    <a href="#">第3回コンクール</a>
+                                    <a href="#">第2回コンクール</a>
+                                    <a href="#">第1回コンクール</a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+                        <div class="footer__category">
+                            <p>ボランティア</p>
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">活動内容について</a>
+                                    <a href="#">募集要項</a>
+                                    <a href="#">広報誌「コンチェルト」</a>
+                                    <a href="#">ボランティアブログ </a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+
+                        <div class="footer__category">
+                            <p>その他</p>
+                            <ul class="footer__list">
+                                <li class="footer__link">
+                                    <a href="#">SIMCニュースレター</a>
+                                    <a href="#">コラム & レビュー</a>
+                                    <a href="#">インタビュー</a>
+                                    <a href="#">公式CDのご紹介</a>
+                                </li><!-- /.footer__link -->
+                            </ul><!-- /.footer__list -->
+                        </div><!-- /.footer__category -->
+
+
+
+
+                    </div><!-- /.footer__right -->
+
+
+
+                </div><!-- /.footer__up -->
+
+            </div>
+        </div><!-- /.footer__wrapper -->
+
+        <div class="footer__container">
+            <div class="footer__low">
+                <img src="img/sec_website24.png" alt="#">
+                <img src="img/sec_website11.jpg" alt="#">
+                <img src="img/sec_website25.jpg" alt="#">
+                <img src="img/sec_website16.png" alt="#">
+                <img src="img/sec_website32.png" alt="#">
+            </div><!-- /.footer__low -->
+
+            <div class="footer__low2">
+                <figure><img src="img/logo_bg_none.png" alt="#"></figure>
+                <div class="footer__access">
+                    <p>七夕まつり事務局</p>
+                    <p>〒○○○-△△△△ 宮城県仙台市青葉 ［ アクセス］</p>
+                    <p>Phone: 000-1234-5678 Fax: 000-1234-5678 E-mail: XXXXX@tanabata.jp</p>
+                    <p>© Sendai XXXXX XXXXXXX. All rights reserved.</p>
+                </div><!-- /.footer__access -->
+
+            </div><!-- /.footer__low2 -->
+        </div><!-- /.footer__container -->
+
+
+
+    </footer><!-- /footer -->
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
